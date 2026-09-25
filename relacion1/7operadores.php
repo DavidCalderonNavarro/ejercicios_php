@@ -8,8 +8,8 @@
 <body>
 <?php 
 
-    $nota1 = 8;
-    $nota2 = 3;
+    $nota1 = 5;
+    $nota2 = 6;
     $faltas = 2;
 
     $medianotas = ($nota1 + $nota2) / 2;
