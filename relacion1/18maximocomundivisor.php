@@ -15,6 +15,8 @@
     $num2 = 12;
     $resta = 1;
 
+    if($num1 > 0 && $num2 > 0){
+
     while ($num1 != $num2) {
 
         if ($num1 < $num2) {
@@ -29,6 +31,12 @@
     }
 
     echo "El maximo comun divisor es: " . $resta;
+
+    }else{
+
+        echo "Los numeros tienen que ser mayor a cero y enteros";
+
+    }
 
     ?>
 
