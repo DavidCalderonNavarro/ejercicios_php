@@ -11,7 +11,7 @@
 
     <?php
 
-    $num = -6;
+    $num = 6;
     $suma = 0;
 
     if ($num > 0) {
