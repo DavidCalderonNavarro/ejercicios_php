@@ -11,7 +11,7 @@
 
     <?php
 
-    $num = 25423452;
+    $num = 345;
     $base = 16;
 
     $resultado = [];
