@@ -11,18 +11,26 @@
 
     <?php
 
-    $divisor = 50;
-    $dividendo = 40205;
-    $coeficiente = 0;
+    $divisor = 7;
+    $dividendo = 14;
+    $cociente = 0;
+
+    if($divisor > 0 && $dividendo > 0){
 
     while ($dividendo >= $divisor) {
 
         $dividendo = $dividendo - $divisor;
-        $coeficiente++;
+        $cociente++;
     }
 
-    echo "El coeficiente es: " . $coeficiente . "<br>";
+    echo "El cociente es: " . $cociente . "<br>";
     echo "El resto es: " . $dividendo;
+
+    }else{
+
+        echo "Los numeros tienen que ser positivos y enteros";
+
+    }
 
     ?>
 
