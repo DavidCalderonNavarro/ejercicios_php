@@ -9,9 +9,11 @@
 
     <?php 
     
-        $num = 8;
+        $num = 10;
         $suma = 1;
     
+        if($num > 0 && $num <= 10){
+
         for($i = 1; $i <= $num; $i++){
 
             $multi = $num*$i;
@@ -23,6 +25,11 @@
 
         echo "Factorial del numero ". $num ." = ". $suma;
     
+        }else{
+
+            echo "Numero incorrecto";
+
+        }
     
     ?>
     
