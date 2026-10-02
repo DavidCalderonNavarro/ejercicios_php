@@ -18,6 +18,6 @@ var_dump($d);
 printf("<br>Tipo boolean: %b", $a);
 printf("<br>Tipo entero: %d", $b);
 printf("<br>Tipo decimal: %.1f", $c);
-printf("<br>Tipo string: %s", $d);
+printf("<br>Tipo boolean: %s", $d);
 
 ?>
