@@ -122,7 +122,6 @@
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=DavidCalderonNavarro&layout=compact&hide_border=true&title_color=777BB4&text_color=777777&bg_color=ffffff"
             alt="Lenguajes más utilizados">
     </td>
-
     <td align="center">
         <h3>Contribution Streak</h3>
         <img
