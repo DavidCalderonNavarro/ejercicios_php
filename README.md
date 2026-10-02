@@ -55,8 +55,6 @@
                 Desarrollo backend y programación del lado del servidor.
             </p>
         </td>
-
-```
     <td align="center" width="33%">
         <img src="https://skillicons.dev/icons?i=laravel" width="80">
         <h3>Laravel</h3>
@@ -64,7 +62,6 @@
             Desarrollo de aplicaciones web utilizando el framework Laravel.
         </p>
     </td>
-
     <td align="center" width="33%">
         <img src="https://skillicons.dev/icons?i=bootstrap" width="80">
         <h3>Bootstrap</h3>
@@ -73,7 +70,6 @@
         </p>
     </td>
 </tr>
-```
 
 </table>
 
@@ -97,8 +93,6 @@
                     alt="Ejercicios PHP">
             </a>
         </td>
-
-```
     <td align="center" width="50%">
         <h3>Laravel Projects</h3>
         <p>
@@ -110,8 +104,6 @@
             alt="Laravel Projects">
     </td>
 </tr>
-```
-
 </table>
 
 <h2 align="center">GitHub Overall</h2>
@@ -124,8 +116,6 @@
                 src="https://github-readme-stats.vercel.app/api?username=DavidCalderonNavarro&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&title_color=777BB4&icon_color=777BB4&text_color=777777&bg_color=ffffff"
                 alt="Estadísticas de GitHub">
         </td>
-
-```
     <td align="center">
         <h3>Most Used Languages</h3>
         <img
@@ -140,32 +130,7 @@
             alt="Racha de contribuciones">
     </td>
 </tr>
-```
-
 </table>
-
-<h2 align="center">Goals</h2>
-
-<p align="center">
-    Mejorar mis conocimientos de <strong>PHP</strong><br>
-    Aprender y aplicar <strong>Laravel</strong><br>
-    Mejorar mis interfaces utilizando <strong>Bootstrap</strong><br>
-    Crear aplicaciones web completas<br>
-    Mejorar mis conocimientos de backend<br>
-    Aprender buenas prácticas de programación<br>
-    Desarrollar proyectos cada vez más completos
-</p>
-
-<h2 align="center">About Me</h2>
-
-<p align="center">
-    Estudiante de <strong>2º DAW</strong><br>
-    Desarrollo Web<br>
-    PHP & Laravel<br>
-    Bootstrap<br>
-    Backend Development<br>
-    Siempre aprendiendo y mejorando
-</p>
 
 <h2 align="center">Contact</h2>
 
