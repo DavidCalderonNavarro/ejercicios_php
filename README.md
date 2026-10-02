@@ -1,5 +1,4 @@
-p align="center">
-    <img
+ <img
         src="https://capsule-render.vercel.app/api?type=waving&height=400&color=gradient&section=header&reversal=false&text=PHP+REPOSITORY&textBg=false&fontSize=60&fontAlign=50&fontAlignY=50&animation=fadeIn&rotate=0&stroke=1231236&strokeWidth=10&desc=Here+you+can+see+my+historical+work+with+PHP&descSize=20&descAlign=50&descAlignY=60"
         alt="Cabecera">
 </p>
