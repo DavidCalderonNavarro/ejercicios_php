@@ -20,11 +20,6 @@
 <br>
 
 <p align="center">
-    Soy estudiante de <strong>2º de Desarrollo de Aplicaciones Web (DAW)</strong>,
-    centrado especialmente en el desarrollo web y la programación backend.
-</p>
-
-<p align="center">
     Actualmente estoy trabajando principalmente con <strong>PHP</strong>,
     <strong>Laravel</strong> y <strong>Bootstrap</strong>, desarrollando proyectos
     y mejorando mis conocimientos de desarrollo web.
