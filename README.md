@@ -101,31 +101,6 @@
 </tr>
 </table>
 
-<h2 align="center">GitHub Overall</h2>
-
-<table align="center">
-    <tr>
-        <td align="center">
-            <h3>GitHub Statistics</h3>
-            <img
-                src="https://github-readme-stats.vercel.app/api?username=DavidCalderonNavarro&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&title_color=777BB4&icon_color=777BB4&text_color=777777&bg_color=ffffff"
-                alt="Estadísticas de GitHub">
-        </td>
-    <td align="center">
-        <h3>Most Used Languages</h3>
-        <img
-            src="https://github-readme-stats.vercel.app/api/top-langs/?username=DavidCalderonNavarro&layout=compact&hide_border=true&title_color=777BB4&text_color=777777&bg_color=ffffff"
-            alt="Lenguajes más utilizados">
-    </td>
-    <td align="center">
-        <h3>Contribution Streak</h3>
-        <img
-            src="https://github-readme-streak-stats.herokuapp.com/?user=DavidCalderonNavarro&hide_border=true&ring=777BB4&fire=FF6B35&currStreakLabel=777BB4"
-            alt="Racha de contribuciones">
-    </td>
-</tr>
-</table>
-
 <h2 align="center">Contact</h2>
 
 <p align="center">
