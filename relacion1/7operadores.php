@@ -10,7 +10,7 @@
 
     //Declaro variables
     $nota1 = 5;
-    $nota2 = 6;
+    $nota2 = 1;
     $faltas = 2;
 
     //Hago la media
