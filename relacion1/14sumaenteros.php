@@ -11,9 +11,11 @@
 
     <?php
 
+    //Declaro variables
     $num = 6;
     $suma = 0;
 
+    
     if ($num > 0) {
 
         for ($i = 1; $i <= $num; $i++) {
