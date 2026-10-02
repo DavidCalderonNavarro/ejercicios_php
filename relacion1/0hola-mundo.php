@@ -1,1 +1,6 @@
-<?php echo 'Hola mundo'; ?>
+<?php 
+
+//Hago mi primer hola mundo
+echo 'Hola mundo'; 
+
+?>
