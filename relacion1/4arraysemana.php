@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-<?php 
-
-    const DIAS_SEMANA = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
-
-    echo DIAS_SEMANA[0];
-
-?>
-=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,4 +47,3 @@
 </body>
 
 </html>
->>>>>>> a929d7265af9038b05c17914b7872afa7bc1622b

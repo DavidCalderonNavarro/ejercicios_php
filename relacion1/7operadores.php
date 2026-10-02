@@ -8,13 +8,16 @@
 <body>
 <?php 
 
+    //Declaro variables
     $nota1 = 5;
     $nota2 = 6;
     $faltas = 2;
 
+    //Hago la media
     $medianotas = ($nota1 + $nota2) / 2;
     $notafinal = $medianotas - ($faltas*0.25);
 
+    //Si es mas que un 5 o igual, da aprobado, sino da suspenso
     if($notafinal >= 5){
 
         echo "El alumno ha aprobado";
