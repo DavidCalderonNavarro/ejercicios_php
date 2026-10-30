@@ -64,7 +64,7 @@
                         "0" => "No has elegido operador"
                     };
 
-                    echo "<h4 class = 'text-center text-primary mt-2'>El reultado es: $resultado</h4>";
+                    echo "<h4 class = 'text-center text-primary mt-2'>El resultado es: $resultado</h4>";
                 }
 
                 ?>

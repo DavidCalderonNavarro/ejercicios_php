@@ -6,10 +6,10 @@ $a = true;
 var_dump($a);
 
 $b = 25;
-var_dump($b); 
+var_dump($b);
 
 $c = 3.1;
-var_dump($c); 
+var_dump($c);
 
 $d = "David";
 var_dump($d);
