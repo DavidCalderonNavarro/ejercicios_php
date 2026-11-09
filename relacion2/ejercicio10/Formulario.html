@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10 HTML</title>
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <h2 class="text-center text-primary mb-4">Calculadora</h2>
+
+                <!-- Este formulario envía los datos a calcular.php mediante POST -->
+                <form method="post" action="calcular.php">
+
+                    <div class="mb-3">
+                        <label for="n1" class="form-label">Número 1:</label>
+                        <input type="number" step="any" name="n1" id="n1"
+                            class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="op" class="form-label">Operador:</label>
+                        <select name="op" id="op" class="form-select" required>
+                            <option value="" selected disabled>Elige operador</option>
+                            <option value="+">+</option>
+                            <option value="-">-</option>
+                            <option value="*">*</option>
+                            <option value="/">/</option>
+                            <option value="%">%</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="n2" class="form-label">Número 2:</label>
+                        <input type="number" step="any" name="n2" id="n2"
+                            class="form-control" required>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary">Calcular</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

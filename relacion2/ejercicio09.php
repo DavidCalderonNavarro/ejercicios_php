@@ -1,35 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 8</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Ejercicio 9</title>
+
 </head>
 
 <body>
-    <!-- Como se monta un grid para distribuir el espacio -->
-    <!-- 1º un div de la class container -->
-    <div id="main" class="container" class="bg-secondary-subtle">
-        <h2 class="text-primary text-center">Calculadora básica</h2>
-        <!-- 2º un div de class row -->
-        <div class="row">
-            <!-- 3º varios div para columnas, indicando reparto de las 12 areas de columnas-->
-            <div class="col-md-3 col-sm-1 clo-0">
-                <!-- Aqui va un espacio en blanco a la izquierda -->
-            </div>
-            <div class="col-md-6 col-sm-10 clo-12">
-                <!-- Aqui va el formulario -->
-                <form class="m5-5 border rounded p-3 shadow" method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                   <div class="mb-3">
-                        <label for="n1" class="form-label fw-bold">Numero 1: </label>
-                        <input type="number" name="n1" class="form-control" id="n1" aria-describedby="emailHelp">
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <h2 class="text-center text-primary mb-4">Calculadora</h2>
+
+                <form method="get" action="">
+                    <!-- Campo para el primer número -->
+                    <div>
+                        <label for="n1">Número 1:</label>
+                        <input type="number" step="any" name="n1" id="n1">
                     </div>
-                    <div class="mb-3">
-                        <select name="op" class="form-select" aria-label="Default select example">
-                            <option selected value="0">Elige operador</option>
+                    <!-- Campo para el operador -->
+                    <div>
+                        <label for="op">Operador:</label>
+                        <select name="op" id="op" class="form-select">
+                            <option value="0">Elige operador</option>
                             <option value="+">+</option>
                             <option value="-">-</option>
                             <option value="*">*</option>
@@ -37,73 +34,77 @@
                             <option value="%">%</option>
                         </select>
                     </div>
-                    <div class="mb-3">
-                        <label for="n2" class="form-label fw-bold">Numero 2: </label>
-                        <input type="number" name="n2" class="form-control" id="n2">
+                    <!-- Campo para el segundo número -->
+                    <div>
+                        <label for="n2">Número 2:</label>
+                        <input type="number" step="any" name="n2" id="n2">
                     </div>
-                    <button type="submit" name="submit" class="btn btn-primary ">Calcular</button>
+
+                    <!-- Botón para calcular -->
+                    <div>
+                        <button type="submit" name="submit">
+                            Calcular
+                        </button>
+                    </div>
+
                 </form>
-                <!-- Aqui se procesan los datos al pulsar el botón enviar -->
 
                 <?php
 
-                $op = $_GET["op"];
+                // Comprobamos si se ha enviado el formulario
 
                 if (isset($_GET["submit"])) {
 
-                    // zona de "descarga" de datos
+                    // Recogemos los datos
 
-                    $n1 = (float)$_GET["n1"]; // Podría dar error si no introduzco número en formulario
-                    $n2 = (float)$_GET["n2"]; // Podría dar error si no introduzco número en formulario
-                
+                    if (
+                        isset($_GET["n1"], $_GET["n2"], $_GET["op"]) &&
+                        $_GET["n1"] !== "" &&
+                        $_GET["n2"] !== ""
+                    ) {
 
-                    $resultado = match ($op) {
-                        "+" => $n1 + $n2,
-                        "-" => $n1 - $n2,
-                        "*" => $n1 * $n2,
-                        "/" => $n1 / $n2,
-                        "%" => (int) $n1 % (int) $n2,
-                        "0" => "No has elegido operador"
-                    };
+                        $n1 = (float) $_GET["n1"];
+                        $n2 = (float) $_GET["n2"];
+                        $op = $_GET["op"];
 
-                    echo "<h4 class = 'text-center text-primary mt-2'>El resultado es: $resultado</h4>";
-                } elseif (($op == "/" || $op == "%") && $n2 == 0) {
+                        // Comprobamos si se intenta dividir entre cero
 
-                        echo "<div class='alert alert-danger mt-3 text-center'>";
-                        echo "No se puede dividir entre cero.";
-                        echo "</div>";
+                        if (($op == "/" || $op == "%") && $n2 == 0) {
 
-                    } 
-                    else {
+                            echo "<div class='alert alert-danger mt-3'>";
+                            echo "No se puede dividir entre cero";
+                            echo "</div>";
+                        } else {
 
-                        // Realizo la operación utilizando match
-                        $resultado = match ($op) {
-                            "+" => $n1 + $n2,
-                            "-" => $n1 - $n2,
-                            "*" => $n1 * $n2,
-                            "/" => $n1 / $n2,
-                            "%" => (int) $n1 % (int) $n2,
-                            default => "Operación no válida"
-                        };
+                            // Realizamos la operación con match
 
-                        // Muestro el resultado
-                        echo "<div class='alert alert-success mt-3 text-center'>";
-                        echo "<h4 class='mb-0'>El resultado es: " . $resultado . "</h4>";
+                            $resultado = match ($op) {
+                                "+" => $n1 + $n2,
+                                "-" => $n1 - $n2,
+                                "*" => $n1 * $n2,
+                                "/" => $n1 / $n2,
+                                "%" => (int) $n1 % (int) $n2,
+                                "0" => "No has elegido operador",
+                                default => "Operador no válido"
+                            };
+
+                            echo "<h4 class='text-center text-primary mt-4'>";
+                            echo "El resultado es: " . htmlspecialchars((string) $resultado);
+                            echo "</h4>";
+                        }
+                    } else {
+
+                        echo "<div class='alert alert-danger mt-3'>";
+                        echo "Debes introducir los dos números";
                         echo "</div>";
                     }
-                
+                }
 
                 ?>
-            </div>
-            <div class="col-md-3 col-sm-1 clo-0">
-                <!-- Aqui va un espacio en blanco a la izquierda -->
+
             </div>
         </div>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
 
 </body>
 

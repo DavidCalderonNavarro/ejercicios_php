@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Ejercicio 1</title>
 </head>
 
 <body>
-                <form method="get" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-                    <div class="mb-3">
+                <form method="get" action="">
+                    <!-- Campo para el primer número -->
+                    <div>
                         <label for="n1">Numero 1: </label>
                         <input type="number" name="n1" id="n1">
                     </div>
-                    <div class="mb-3">
+                    <!-- Campo para el operador -->
+                    <div>
                         <select name="op" aria-label="Default select example">
                             <option selected value="0">Elige operador</option>
                             <option value="+">+</option>
@@ -23,6 +25,7 @@
                             <option value="%">%</option>
                         </select>
                     </div>
+                    <!-- Campo para el segundo número -->
                     <div class="mb-3">
                         <label for="n2">Numero 2: </label>
                         <input type="number" name="n2" id="n2">
@@ -54,9 +57,6 @@
                 }
 
                 ?>
-            </div>
-            <div class="col-md-3 col-sm-1 clo-0">
-                <!-- Aqui va un espacio en blanco a la izquierda -->
             </div>
         </div>
     </div>
