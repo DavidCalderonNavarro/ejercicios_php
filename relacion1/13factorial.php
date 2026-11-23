@@ -12,7 +12,7 @@
     <?php
 
     // Declaro las variables
-    $num = 23;
+    $num = 5;
     $suma = 1;
 
     // Compruebo si el número está entre 1 y 10
